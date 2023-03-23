@@ -19,6 +19,7 @@
 		37F70B8B29CBC6870066BDD7 /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B8A29CBC6870066BDD7 /* HttpPostClient.swift */; };
 		37F70B9329CBCACD0066BDD7 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9229CBCACD0066BDD7 /* DomainError.swift */; };
 		37F70B9529CBCDC10066BDD7 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9429CBCDC10066BDD7 /* HttpError.swift */; };
+		37F70B9829CBDA590066BDD7 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9729CBDA590066BDD7 /* ExtensionHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		37F70B8A29CBC6870066BDD7 /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		37F70B9229CBCACD0066BDD7 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		37F70B9429CBCDC10066BDD7 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		37F70B9729CBDA590066BDD7 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		37F70B6A29CBAC9A0066BDD7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				37F70B9629CBDA330066BDD7 /* Helpers */,
 				37F70B6C29CBAC9A0066BDD7 /* Data.docc */,
 				37F70B8E29CBC75E0066BDD7 /* UseCases */,
 				37F70B8F29CBC77A0066BDD7 /* Http */,
@@ -198,6 +201,14 @@
 				37F70B9229CBCACD0066BDD7 /* DomainError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		37F70B9629CBDA330066BDD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37F70B9729CBDA590066BDD7 /* ExtensionHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +372,7 @@
 				37F70B9529CBCDC10066BDD7 /* HttpError.swift in Sources */,
 				37F70B6D29CBAC9A0066BDD7 /* Data.docc in Sources */,
 				37F70B8B29CBC6870066BDD7 /* HttpPostClient.swift in Sources */,
+				37F70B9829CBDA590066BDD7 /* ExtensionHelpers.swift in Sources */,
 				37F70B8929CBC6190066BDD7 /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
