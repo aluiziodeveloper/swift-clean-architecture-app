@@ -20,6 +20,10 @@
 		37F70B9329CBCACD0066BDD7 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9229CBCACD0066BDD7 /* DomainError.swift */; };
 		37F70B9529CBCDC10066BDD7 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9429CBCDC10066BDD7 /* HttpError.swift */; };
 		37F70B9829CBDA590066BDD7 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9729CBDA590066BDD7 /* ExtensionHelpers.swift */; };
+		37F70B9B29CBEA510066BDD7 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9A29CBEA510066BDD7 /* TestExtensions.swift */; };
+		37F70B9D29CBEAD70066BDD7 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9C29CBEAD70066BDD7 /* TestFactories.swift */; };
+		37F70BA029CBEFFE0066BDD7 /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70B9F29CBEFFE0066BDD7 /* HttpClientSpy.swift */; };
+		37F70BA229CBF09C0066BDD7 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F70BA129CBF09C0066BDD7 /* AccountModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		37F70B9229CBCACD0066BDD7 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		37F70B9429CBCDC10066BDD7 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		37F70B9729CBDA590066BDD7 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		37F70B9A29CBEA510066BDD7 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		37F70B9C29CBEAD70066BDD7 /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
+		37F70B9F29CBEFFE0066BDD7 /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
+		37F70BA129CBF09C0066BDD7 /* AccountModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,8 @@
 		37F70B7629CBAC9A0066BDD7 /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
+				37F70B9E29CBEFC70066BDD7 /* Http */,
+				37F70B9929CBE9D30066BDD7 /* Helpers */,
 				37F70B9029CBC7A10066BDD7 /* UseCases */,
 			);
 			path = DataTests;
@@ -209,6 +219,24 @@
 				37F70B9729CBDA590066BDD7 /* ExtensionHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		37F70B9929CBE9D30066BDD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37F70B9A29CBEA510066BDD7 /* TestExtensions.swift */,
+				37F70B9C29CBEAD70066BDD7 /* TestFactories.swift */,
+				37F70BA129CBF09C0066BDD7 /* AccountModelFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		37F70B9E29CBEFC70066BDD7 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				37F70B9F29CBEFFE0066BDD7 /* HttpClientSpy.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,7 +409,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F70B9D29CBEAD70066BDD7 /* TestFactories.swift in Sources */,
+				37F70BA029CBEFFE0066BDD7 /* HttpClientSpy.swift in Sources */,
 				37F70B7829CBAC9A0066BDD7 /* RemoteAddAccountTests.swift in Sources */,
+				37F70BA229CBF09C0066BDD7 /* AccountModelFactory.swift in Sources */,
+				37F70B9B29CBEA510066BDD7 /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
