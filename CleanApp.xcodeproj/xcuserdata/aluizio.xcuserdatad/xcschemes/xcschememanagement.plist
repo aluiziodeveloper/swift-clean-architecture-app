@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>CleanApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>37EE851429CCA4D70003DD4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>37F70B5829CBA9690066BDD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
