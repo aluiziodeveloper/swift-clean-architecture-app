@@ -17,6 +17,7 @@
 		37AF26D429F2D2CA00114D40 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F70B5929CBA9690066BDD7 /* Domain.framework */; };
 		37AF26D529F2D2CA00114D40 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37F70B5929CBA9690066BDD7 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37AF26DB29F2D39000114D40 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF26DA29F2D39000114D40 /* AlertView.swift */; };
+		37AF26E029F2D7E200114D40 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AF26DF29F2D7E200114D40 /* EmailValidator.swift */; };
 		37EE851629CCA4D70003DD4A /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EE850E29CCA4D60003DD4A /* Infra.framework */; };
 		37EE851B29CCA4D70003DD4A /* AlamofireAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE851A29CCA4D70003DD4A /* AlamofireAdapterTests.swift */; };
 		37EE852329CCA69A0003DD4A /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F70B6929CBAC9A0066BDD7 /* Data.framework */; };
@@ -155,6 +156,7 @@
 		3780823929CD310A00D88ED7 /* AddAccountIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountIntegrationTests.swift; sourceTree = "<group>"; };
 		37AF26D229F2D24700114D40 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		37AF26DA29F2D39000114D40 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		37AF26DF29F2D7E200114D40 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		37EE850E29CCA4D60003DD4A /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EE851529CCA4D70003DD4A /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EE851A29CCA4D70003DD4A /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		37413FE129D5BA2D00804423 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				37AF26DE29F2D7C800114D40 /* Validators */,
 				37AF26DC29F2D3BA00114D40 /* Presenters */,
 				37AF26D929F2D36F00114D40 /* Views */,
 			);
@@ -309,6 +312,14 @@
 				37413FEC29D5BA2D00804423 /* SignUpPresenterTests.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		37AF26DE29F2D7C800114D40 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				37AF26DF29F2D7E200114D40 /* EmailValidator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 		37EE850F29CCA4D60003DD4A /* Infra */ = {
@@ -794,6 +805,7 @@
 			files = (
 				37AF26D329F2D24700114D40 /* SignUpPresenter.swift in Sources */,
 				37AF26DB29F2D39000114D40 /* AlertView.swift in Sources */,
+				37AF26E029F2D7E200114D40 /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
