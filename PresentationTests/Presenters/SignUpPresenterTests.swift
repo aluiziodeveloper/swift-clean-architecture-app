@@ -50,6 +50,14 @@ final class SignUpPresenterTests: XCTestCase {
         sut.signUp(viewModel: signUpViewModel)
         XCTAssertEqual(emailValidatorSpy.email, signUpViewModel.email)
     }
+    
+    func test_signUp_should_show_error_message_if_invalid_email_is_provided() {
+        let (sut, alertViewSpy, emailValidatorSpy) = makeSut()
+        let signUpViewModel = SignUpViewModel(name: "any_name", email: "invalid_email@a.com", password: "any_password", passwordConfirmation: "any_password")
+        emailValidatorSpy.isValid = false
+        sut.signUp(viewModel: signUpViewModel)
+        XCTAssertEqual(alertViewSpy.viewModel, AlertViewModel(title: "Erro de validação", message: "Email inválido"))
+    }
 }
 
 extension SignUpPresenterTests {
@@ -62,6 +70,7 @@ extension SignUpPresenterTests {
     
     class AlertViewSpy: AlertView {
         var viewModel: AlertViewModel?
+
         func showMessage(viewModel: AlertViewModel) {
             self.viewModel = viewModel
         }
@@ -73,7 +82,7 @@ extension SignUpPresenterTests {
         
         func isValid(email: String) -> Bool {
             self.email = email
-            return true
+            return isValid
         }
     }
 }
